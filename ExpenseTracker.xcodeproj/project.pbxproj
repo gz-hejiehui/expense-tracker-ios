@@ -10,6 +10,7 @@
 		AC41C2FB27EF70AB00C77DAD /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41C2FA27EF70AB00C77DAD /* TransactionList.swift */; };
 		AC41C2FF27EF74FF00C77DAD /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = AC41C2FE27EF74FF00C77DAD /* Collections */; };
 		AC41C30227EF751D00C77DAD /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = AC41C30127EF751D00C77DAD /* SwiftUIFontIcon */; };
+		AC41C30527EFEC2C00C77DAD /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = AC41C30427EFEC2C00C77DAD /* SwiftUICharts */; };
 		AC4B462E27EF3B72004F515D /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B462D27EF3B72004F515D /* ExpenseTrackerApp.swift */; };
 		AC4B463027EF3B72004F515D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B462F27EF3B72004F515D /* ContentView.swift */; };
 		AC4B463227EF3B74004F515D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4B463127EF3B74004F515D /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC41C30527EFEC2C00C77DAD /* SwiftUICharts in Frameworks */,
 				AC41C30227EF751D00C77DAD /* SwiftUIFontIcon in Frameworks */,
 				AC41C2FF27EF74FF00C77DAD /* Collections in Frameworks */,
 			);
@@ -111,6 +113,7 @@
 			packageProductDependencies = (
 				AC41C2FE27EF74FF00C77DAD /* Collections */,
 				AC41C30127EF751D00C77DAD /* SwiftUIFontIcon */,
+				AC41C30427EFEC2C00C77DAD /* SwiftUICharts */,
 			);
 			productName = ExpenseTracker;
 			productReference = AC4B462A27EF3B72004F515D /* ExpenseTracker.app */;
@@ -143,6 +146,7 @@
 			packageReferences = (
 				AC41C2FD27EF74FF00C77DAD /* XCRemoteSwiftPackageReference "swift-collections" */,
 				AC41C30027EF751D00C77DAD /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				AC41C30327EFEC2C00C77DAD /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = AC4B462B27EF3B72004F515D /* Products */;
 			projectDirPath = "";
@@ -397,6 +401,14 @@
 				kind = branch;
 			};
 		};
+		AC41C30327EFEC2C00C77DAD /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -409,6 +421,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AC41C30027EF751D00C77DAD /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
 			productName = SwiftUIFontIcon;
+		};
+		AC41C30427EFEC2C00C77DAD /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC41C30327EFEC2C00C77DAD /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
